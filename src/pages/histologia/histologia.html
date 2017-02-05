@@ -1,0 +1,51 @@
+<!--
+  Generated template for the Histologia page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Histologia</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list radio-group [(ngModel)]="sistemas-histologia">
+
+    <ion-list-header>
+      Sistemas
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Cardiovascular</ion-label>
+      <ion-radio value="cardio" checked></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Respiratorio</ion-label>
+      <ion-radio value="resp"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Urinario</ion-label>
+      <ion-radio value="urinario"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Muscular</ion-label>
+      <ion-radio value="muscular"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Nervoso</ion-label>
+      <ion-radio value="nervoso"></ion-radio>
+    </ion-item>
+
+  </ion-list>
+  <div class="space" style="height: 80px"> </div>
+  <button ion-button full id="comecar_histologia" (click) = "open_questoes()"> Começar </button>
+</ion-content>
