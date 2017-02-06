@@ -20,6 +20,7 @@ export class AnatomiaPage {
 open_questoes(){
   var valor_radio = (this.regioesForm.value);
   valor_radio = JSON.stringify(valor_radio);
+  console.log(valor_radio);
   var posicao = valor_radio.indexOf(':');
   var tamanho = valor_radio.length;
   valor_radio = (valor_radio.slice(posicao+2,tamanho-2));

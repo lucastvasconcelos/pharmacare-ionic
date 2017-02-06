@@ -5,9 +5,10 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-import {AnatomiaPage} from '../pages/anatomia/anatomia'
-import {HistologiaPage} from '../pages/histologia/histologia'
-import {QuizzPage} from '../pages/quizz/quizz'
+import {AnatomiaPage} from '../pages/anatomia/anatomia';
+import {HistologiaPage} from '../pages/histologia/histologia';
+import {QuizzPage} from '../pages/quizz/quizz';
+import {FinalizarPage} from '../pages/finalizar/finalizar';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {QuizzPage} from '../pages/quizz/quizz'
     TabsPage,
     AnatomiaPage,
     HistologiaPage,
-    QuizzPage
+    QuizzPage,
+    FinalizarPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -32,7 +34,8 @@ import {QuizzPage} from '../pages/quizz/quizz'
     TabsPage,
     AnatomiaPage,
     HistologiaPage,
-    QuizzPage
+    QuizzPage,
+    FinalizarPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
